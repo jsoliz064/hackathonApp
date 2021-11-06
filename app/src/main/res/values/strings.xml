@@ -8,4 +8,6 @@
     <string name="fullname">fullname</string>
     <string name="email">email</string>
     <string name="loginhere">loginhere</string>
+    <string name="confirmar_password">confirmar password</string>
+    <string name="name">name</string>
 </resources>

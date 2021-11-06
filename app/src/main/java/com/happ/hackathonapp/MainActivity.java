@@ -41,7 +41,6 @@ EditText edtUsuario,edtPassword;
                 Intent intent=new Intent(getApplicationContext(),SingUp.class);
                 //intent.putExtra("id_usuario",id);
                 startActivity(intent);
-                finish();
             }
 
         });

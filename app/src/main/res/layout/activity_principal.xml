@@ -6,4 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".PrincipalActivity">
 
+    <Button
+        android:id="@+id/btncoordenada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ObtenerCoordendasActual"
+        android:text="subir coordenadas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/txtlon"
+        app:layout_constraintEnd_toEndOf="@+id/txtlon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtlon" />
+
+    <TextView
+        android:id="@+id/txtlon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btncoordenada"
+        app:layout_constraintEnd_toEndOf="@+id/btncoordenada"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/btncoordenada" />
 </androidx.constraintlayout.widget.ConstraintLayout>

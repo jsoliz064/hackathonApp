@@ -35,14 +35,14 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="30dp"
-            android:hint="@string/fullname"
+            android:hint="@string/name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/fullname"
+                android:id="@+id/nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_name"
@@ -79,18 +79,18 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:hint="@string/username"
+            android:hint="@string/password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEmail">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/username"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/ic_user"
-                android:drawableRight="@drawable/ic_user"
+                android:drawableEnd="@drawable/ic_password"
+                android:drawableRight="@drawable/ic_password"
 
                 tools:targetApi="jelly_bean" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -101,12 +101,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:hint="@string/password"
+            android:hint="@string/confirmar_password"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutUsername"
             tools:layout_editor_absoluteX="0dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/password"
+                android:id="@+id/passwordconfirm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_password"
