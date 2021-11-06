@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">hackathonApp</string>
+    <string name="login">login</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="signuphere">signuphere</string>
+    <string name="signup">signup</string>
+    <string name="fullname">fullname</string>
+    <string name="email">email</string>
+    <string name="loginhere">loginhere</string>
+</resources>
