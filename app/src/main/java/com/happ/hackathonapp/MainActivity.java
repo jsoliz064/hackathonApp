@@ -25,11 +25,12 @@ public class MainActivity extends AppCompatActivity {
 Button btnLogin;
 TextView txtSignUp;
 EditText edtUsuario,edtPassword;
+String id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        id="";
         btnLogin=findViewById(R.id.buttonLogin);
         txtSignUp=findViewById(R.id.signUpText);
         edtUsuario=findViewById(R.id.usuario);
@@ -39,7 +40,7 @@ EditText edtUsuario,edtPassword;
             @Override
             public void onClick(View view){
                 Intent intent=new Intent(getApplicationContext(),SingUp.class);
-                //intent.putExtra("id_usuario",id);
+                intent.putExtra("id_usuario",id);
                 startActivity(intent);
             }
 
@@ -55,13 +56,12 @@ EditText edtUsuario,edtPassword;
     }
     private void validarUsuario(String URL){
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
-
             @Override
             public void onResponse(String response) {
                 if (!response.isEmpty()){
-                    //id=response;
+                    id=response;
                     Intent intent=new Intent(getApplicationContext(),PrincipalActivity.class);
-                    //intent.putExtra("id_usuario",id);
+                    intent.putExtra("id_usuario",id);
                     startActivity(intent);
                     finish();
                 }else{
