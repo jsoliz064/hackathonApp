@@ -92,6 +92,7 @@ FusedLocationProviderClient fusedLocationProviderClient;
             public void onClick(View view) {
                 String descripcion=desc.getText().toString()+"";
                 if (descripcion.length()>0){
+                    //subirImagenes();
                     registrarReporte(id_usuario,latitud,longitud,descripcion);
                 }else{
                     Toast.makeText(PrincipalActivity.this, "Ingrese una descripcion", Toast.LENGTH_LONG).show();

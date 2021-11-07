@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">hackathonApp</string>
     <string name="login">login</string>
-    <string name="username">username</string>
-    <string name="password">password</string>
-    <string name="signuphere">signuphere</string>
-    <string name="signup">signup</string>
-    <string name="fullname">fullname</string>
+    <string name="username">Nombre</string>
+    <string name="password">Contraseña</string>
+    <string name="signuphere">Registrate Aqui</string>
+    <string name="signup">Registrar</string>
+    <string name="fullname">Nombre Completo</string>
     <string name="email">email</string>
-    <string name="loginhere">loginhere</string>
-    <string name="confirmar_password">confirmar password</string>
-    <string name="name">name</string>
+    <string name="loginhere">Login Aqui</string>
+    <string name="confirmar_password">Confirmar Contraseña</string>
+    <string name="name">Nombre</string>
 </resources>

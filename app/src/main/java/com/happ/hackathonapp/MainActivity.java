@@ -40,7 +40,6 @@ String id;
             @Override
             public void onClick(View view){
                 Intent intent=new Intent(getApplicationContext(),SingUp.class);
-                intent.putExtra("id_usuario",id);
                 startActivity(intent);
             }
 
@@ -50,6 +49,7 @@ String id;
             @Override
             public void onClick(View view){
                 validarUsuario("http://192.168.56.1/hackathon/validar_usuariopg.php");
+                //validarUsuario("https://0456-131-0-196-209.ngrok.io/hackathon/validar_usuariopg.php");
             }
 
         });
@@ -60,6 +60,7 @@ String id;
             public void onResponse(String response) {
                 if (!response.isEmpty()){
                     id=response;
+                    //Intent intent=new Intent(getApplicationContext(),TipoActivity.class);
                     Intent intent=new Intent(getApplicationContext(),PrincipalActivity.class);
                     intent.putExtra("id_usuario",id);
                     startActivity(intent);

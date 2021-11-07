@@ -2,10 +2,12 @@ package com.happ.hackathonapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -23,6 +25,7 @@ public class SingUp extends AppCompatActivity {
     String URL_REGISTRAR = "http://192.168.56.1/hackathon/registrar.php";
     EditText edtNombre,edtEmail,edtPassword,getEdtPasswordConfirm;
     Button btnRegistrar;
+    TextView txtlogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +36,7 @@ public class SingUp extends AppCompatActivity {
         edtPassword=findViewById(R.id.password);
         getEdtPasswordConfirm=findViewById(R.id.passwordconfirm);
         btnRegistrar=findViewById(R.id.buttonSignUp);
-
+        txtlogin=findViewById(R.id.txtlogin);
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,6 +52,15 @@ public class SingUp extends AppCompatActivity {
 
             }
         });
+
+        txtlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
     public void registrar(final String nombre, final String email,final String password) {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
@@ -58,6 +70,10 @@ public class SingUp extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         Toast.makeText(SingUp.this, response, Toast.LENGTH_LONG).show();
+                        Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                        //intent.putExtra("id_usuario",id);
+                        startActivity(intent);
+                        finish();
                     }
                 }, new Response.ErrorListener() {
             @Override

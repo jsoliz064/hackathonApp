@@ -13,9 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HackathonApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".PrincipalActivity">
-
-        </activity>
+        <activity android:name=".TipoActivity"></activity>
+        <activity android:name=".PrincipalActivity"></activity>
         <activity android:name=".SingUp" />
         <activity android:name=".MainActivity">
             <intent-filter>

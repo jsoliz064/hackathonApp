@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_password"
                 android:drawableRight="@drawable/ic_password"
-
+                android:inputType="textPassword"
                 tools:targetApi="jelly_bean" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -111,7 +111,7 @@
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_password"
                 android:drawableRight="@drawable/ic_password"
-
+                android:inputType="textPassword"
                 tools:targetApi="jelly_bean" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -136,7 +136,7 @@
             app:layout_constraintTop_toBottomOf="@+id/progress" />
 
         <TextView
-            android:id="@+id/loginText"
+            android:id="@+id/txtlogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
