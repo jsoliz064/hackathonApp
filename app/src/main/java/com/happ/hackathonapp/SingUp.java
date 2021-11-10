@@ -22,7 +22,7 @@ import java.util.Hashtable;
 import java.util.Map;
 
 public class SingUp extends AppCompatActivity {
-    String URL_REGISTRAR = "http://192.168.56.1/hackathon/registrar.php";
+    String URL_REGISTRAR = "http://34.125.181.20/registrar.php";
     EditText edtNombre,edtEmail,edtPassword,getEdtPasswordConfirm;
     Button btnRegistrar;
     TextView txtlogin;

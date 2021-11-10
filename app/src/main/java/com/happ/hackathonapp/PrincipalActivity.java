@@ -56,8 +56,8 @@ public class PrincipalActivity extends AppCompatActivity {
     GridViewAdapter baseAdapter;
     String id_usuario;
     String id_reporte;
-    String URL_UPLOAD_IMAGENES = "http://192.168.56.1/hackathon/cargarimagen.php/";
-    String URL_REPORTE = "http://192.168.56.1/hackathon/reporte.php";
+    String URL_UPLOAD_IMAGENES = "http://34.125.181.20/cargarimagen.php/";
+    String URL_REPORTE = "http://34.125.181.20/reporte.php";
     RequestQueue requestQueue;
     EditText desc;
 

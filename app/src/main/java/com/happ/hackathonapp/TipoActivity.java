@@ -42,7 +42,7 @@ public class TipoActivity extends AppCompatActivity {
         btntipo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                readTipos("http://192.168.56.1/hackathon/tipos.php");
+                readTipos("http://34.125.181.20/tipos.php");
                 //String seleccion=spinner.getSelectedItem().toString();
             }
         });

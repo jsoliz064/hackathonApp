@@ -48,8 +48,8 @@ String id;
         btnLogin.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                validarUsuario("http://192.168.56.1/hackathon/validar_usuariopg.php");
-                //validarUsuario("https://0456-131-0-196-209.ngrok.io/hackathon/validar_usuariopg.php");
+                validarUsuario("http://34.125.181.20/validar_usuariopg.php");
+                //validarUsuario("http://192.168.56.1/hackathon/validar_usuariopg.php");;
             }
 
         });
